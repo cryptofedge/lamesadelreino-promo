@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>¿Empujón o Espíritu? — Promo · La Mesa del Reino</title>
-<meta name="description" content="Promo del episodio “¿Caer por el Espíritu Santo es bíblico?” con el Pastor Adrián Rodríguez. Video vertical 1080p, breakdown y guía de publicación.">
-<meta property="og:title" content="¿Empujón o Espíritu? — La Mesa del Reino">
-<meta property="og:description" content="Promo del episodio con el Pastor Adrián Rodríguez · sábado 5 de septiembre · 7:00 PM.">
+<title>El don de lenguas — Promo · La Mesa del Reino</title>
+<meta name="description" content="Promo del episodio “El don de lenguas: ¿señal del Espíritu Santo o tradición religiosa?” con el Pastor Adrián Rodríguez. Video vertical 1080p, breakdown y guía de publicación.">
+<meta property="og:title" content="El don de lenguas: ¿señal del Espíritu Santo o tradición religiosa? — La Mesa del Reino">
+<meta property="og:description" content="Nuevo episodio con el Pastor Adrián Rodríguez · sábado 5 de septiembre · 7:00 PM · YouTube @lamesadelreino.">
 <meta property="og:type" content="video.other">
 <meta property="og:image" content="poster.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,10 +52,14 @@
   .kicker { text-align:center; font-size:12px; letter-spacing:.22em; text-transform:uppercase;
     color:var(--gold); font-weight:600; margin:0 0 12px; }
   h1 { font-family:var(--disp); font-weight:400; text-transform:uppercase;
-    font-size:clamp(40px,12vw,70px); line-height:.94; text-align:center; margin:0; }
-  h1 .or { color:var(--gold); display:block; font-size:.6em; margin:.04em 0; }
+    font-size:clamp(26px,5.6vw,42px); line-height:1.12; text-align:center; margin:0;
+    letter-spacing:.01em; max-width:16ch; margin-inline:auto; }
+  h1 .fire { display:block; font-size:.62em; margin:0 0 6px; -webkit-text-fill-color:initial; }
+  h1 .lead { color:var(--ink); }
+  h1 .q { display:block; margin-top:4px; }
+  h1 .hl { color:var(--gold); }
   .sub { text-align:center; font-family:var(--serif); font-style:italic;
-    font-size:clamp(16px,4.4vw,20px); color:var(--ink-dim); margin:14px auto 0; max-width:34ch; }
+    font-size:clamp(15px,4.2vw,19px); color:var(--ink-dim); margin:16px auto 0; max-width:38ch; }
 
   main { padding:34px 0 8px; }
   section { margin:0 0 42px; }
@@ -130,15 +134,24 @@
   .soc .p { font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-mute); }
   .soc .h { color:var(--ink); font-weight:600; font-size:14px; }
 
-  footer { border-top:1px solid var(--line-soft); background:var(--bg2); padding:26px 0 40px; margin-top:16px; }
-  .sponsor { display:flex; align-items:center; gap:14px; justify-content:center; }
-  .sponsor img { width:60px; height:auto; }
-  .sponsor .s1 { font-size:10.5px; letter-spacing:.17em; text-transform:uppercase; color:var(--ink-mute); }
-  .sponsor .s2 { font-weight:700; color:var(--ink); }
-  .sponsor .s3 a { font-size:13px; }
-  .madefor { text-align:center; color:var(--ink-mute); font-size:12px; margin-top:18px; }
+  .spon-lead { color:var(--ink-dim); font-size:14px; margin:0 0 16px; }
+  .spon-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+  .spon { background:var(--surface); border:1px solid var(--line); border-radius:12px;
+    padding:16px; display:flex; flex-direction:column; gap:6px; }
+  .spon-name { font-family:var(--disp); text-transform:uppercase; font-size:17px;
+    letter-spacing:.02em; color:var(--ink); line-height:1.1; }
+  .spon-name .by { font-family:var(--sans); text-transform:none; font-size:12px;
+    font-weight:500; color:var(--ink-mute); letter-spacing:0; }
+  .spon-slogan { color:var(--gold); font-family:var(--sans); text-transform:uppercase;
+    font-size:11px; font-weight:700; letter-spacing:.12em; display:block; margin-top:3px; }
+  .spon-tag { font-size:13px; color:var(--ink-dim); }
+  .spon-meta { font-size:12.5px; color:var(--ink-mute); line-height:1.5; margin-top:auto; }
+  .spon-meta a { color:var(--gold); text-decoration:none; }
 
-  @media (max-width:480px) { .soc { grid-template-columns:1fr; } }
+  footer { border-top:1px solid var(--line-soft); background:var(--bg2); padding:24px 0 40px; margin-top:16px; }
+  .madefor { text-align:center; color:var(--ink-mute); font-size:12px; }
+
+  @media (max-width:480px) { .soc { grid-template-columns:1fr; } .spon-grid { grid-template-columns:1fr; } }
   @media (prefers-reduced-motion:reduce) { .btn { transition:none; } }
 </style>
 </head>
@@ -148,8 +161,8 @@
   <div class="wrap">
     <img class="badge" src="badge.png" alt="La Mesa del Reino">
     <p class="kicker">La Mesa del Reino · Promo del episodio</p>
-    <h1>¿Empujón<span class="or">o</span>Espíritu?</h1>
-    <p class="sub">¿Caer por el Espíritu Santo es bíblico? — con el Pastor Adrián Rodríguez</p>
+    <h1><span class="fire">🔥</span><span class="lead">El don de lenguas:</span><span class="q">¿señal del Espíritu Santo <span class="hl">o tradición religiosa?</span></span></h1>
+    <p class="sub">Nuevo episodio con el Pastor Adrián Rodríguez</p>
   </div>
 </header>
 
@@ -190,7 +203,7 @@
       <div><dt>Audio</dt><dd>Voz original de los clips + música</dd></div>
       <div><dt>Subtítulos</dt><dd>Quemados, palabra por palabra</dd></div>
       <div><dt>Marca de agua</dt><dd>Ninguna</dd></div>
-      <div><dt>Patrocinio</dt><dd>Go Picadera (crédito en el cierre)</dd></div>
+      <div><dt>Patrocinio</dt><dd>Go Picadera · Pointec · Noboa Barber Shop · True Mattress</dd></div>
     </dl>
   </section>
 
@@ -217,7 +230,7 @@
         <p>La estufa botando humo, el BBQ botando chispa, <q>algo mesiánico y algo apostólico</q>. Push-in fuerte, la música rompe.</p></li>
       <li><span class="tc">1:21</span><span class="dot"></span>
         <h3>Cierre</h3>
-        <p>CTA con la fecha + todas las redes de La Mesa del Reino + crédito de Go Picadera. Fundido a negro.</p></li>
+        <p>CTA con la fecha + todas las redes de La Mesa del Reino + créditos de los patrocinadores. Fundido a negro.</p></li>
     </ol>
   </section>
 
@@ -225,8 +238,8 @@
     <h2>Cómo publicarlo</h2>
     <ul class="check">
       <li>Sube <b>nativo</b> a cada plataforma — no descargues de una para subir a otra (penaliza el alcance).</li>
-      <li>Caption con la <b>pregunta real</b> + palabras clave: <i>“¿Es bíblico caer en el Espíritu Santo? ¿Dónde lo dice la Biblia?…”</i></li>
-      <li>Cierra el caption con debate: <b>“¿Tú qué crees — bíblico o tradición? 👇”</b></li>
+      <li>Caption con la <b>pregunta real</b> + palabras clave: <i>“El don de lenguas: ¿señal del Espíritu Santo o tradición religiosa?…”</i></li>
+      <li>Cierra el caption con debate: <b>“¿Tú qué crees — señal del Espíritu o tradición? 👇”</b></li>
       <li><b>Comentario fijado</b> en cada post: enlace al episodio completo + “suscríbete para el próximo debate”.</li>
       <li>Manda la pieza a <b>Adrián</b> lista para repostear — su audiencia es un canal de distribución.</li>
       <li>Del mismo episodio salen <b>6–8 clips</b> más (el reto, la crítica, “la estufa botando humo”…). Publica 3–5 por semana.</li>
@@ -241,6 +254,38 @@
       <a href="https://www.instagram.com/lamesadelreinotv"><span class="p">Instagram</span><span class="h">@lamesadelreinotv</span></a>
       <a href="https://www.tiktok.com/@lamesadelreinotv"><span class="p">TikTok</span><span class="h">@lamesadelreinotv</span></a>
       <a href="https://www.facebook.com/lamesadelreino"><span class="p">Facebook</span><span class="h">La Mesa del Reino</span></a>
+    </div>
+  </section>
+
+  <section id="sponsors">
+    <h2>Patrocinadores</h2>
+    <p class="spon-lead">Este episodio llega con el apoyo de:</p>
+    <div class="spon-grid">
+
+      <div class="spon">
+        <div class="spon-name">Go Picadera</div>
+        <div class="spon-tag">Auténtica comida dominicana</div>
+        <div class="spon-meta"><a href="https://gopicadera.com">gopicadera.com</a></div>
+      </div>
+
+      <div class="spon">
+        <div class="spon-name">Pointec<span class="spon-slogan">Bueno · Bonito · Barato</span></div>
+        <div class="spon-tag">iPhone · Scooters · Tienda · Promociones</div>
+        <div class="spon-meta">4802 4th Ave, Brooklyn, NY<br><a href="tel:+13473318292">(347) 331-8292</a> · <a href="https://instagram.com/aymancrew">@aymancrew</a></div>
+      </div>
+
+      <div class="spon">
+        <div class="spon-name">Noboa Barber Shop</div>
+        <div class="spon-tag">Barbería</div>
+        <div class="spon-meta">5019 5th Ave, Brooklyn, NY<br><a href="tel:+13473318292">(347) 331-8292</a></div>
+      </div>
+
+      <div class="spon">
+        <div class="spon-name">True Mattress <span class="by">by Mela Group</span></div>
+        <div class="spon-tag">“Comfort you deserve, quality you trust.”</div>
+        <div class="spon-meta">209-34 Northern Blvd, Suite 1074<br>Bayside, NY 11361</div>
+      </div>
+
     </div>
   </section>
 
@@ -284,15 +329,7 @@
 
 <footer>
   <div class="wrap">
-    <div class="sponsor">
-      <img src="gopicadera.png" alt="Go Picadera">
-      <div>
-        <div class="s1">Con el apoyo de</div>
-        <div class="s2">Go Picadera</div>
-        <div class="s3"><a href="https://gopicadera.com">gopicadera.com</a></div>
-      </div>
-    </div>
-    <p class="madefor">Pieza promocional · para revisión y distribución del equipo</p>
+    <p class="madefor">Pieza promocional de La Mesa del Reino · para revisión y distribución del equipo</p>
   </div>
 </footer>
 
