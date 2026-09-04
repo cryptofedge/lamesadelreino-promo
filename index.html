@@ -231,17 +231,13 @@
 </main>
 
 <script>
-  // Some mobile browsers pause an inline <video> the instant you unmute it via
-  // the native control. If that happens, resume — this runs inside the tap's
-  // own user-gesture window, so the browser allows it.
+  // Safety net: if a mobile browser pauses the inline video when it's unmuted,
+  // resume it (runs inside the tap's own user-gesture window).
   (function () {
     var v = document.getElementById('promo');
     if (!v) return;
-    var t = 0;
     v.addEventListener('volumechange', function () {
-      t = v.currentTime;
-      if (!v.muted && v.paused && !v.ended && t > 0) {
-        v.currentTime = t;
+      if (!v.muted && v.paused && !v.ended && v.currentTime > 0) {
         v.play().catch(function () {});
       }
     });
