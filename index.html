@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿Empujón o Espíritu? — Promo · La Mesa del Reino</title>
+<meta name="description" content="Promo del episodio “¿Caer por el Espíritu Santo es bíblico?” con el Pastor Adrián Rodríguez. Video vertical 1080p, breakdown y guía de publicación.">
+<meta property="og:title" content="¿Empujón o Espíritu? — La Mesa del Reino">
+<meta property="og:description" content="Promo del episodio con el Pastor Adrián Rodríguez · sábado 5 de septiembre · 7:00 PM.">
+<meta property="og:type" content="video.other">
+<meta property="og:image" content="poster.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:ital,opsz,wght@1,9..144,400;0,9..144,600&display=swap">
+<style>
+  :root {
+    --bg:#171310; --bg2:#1f1a15; --surface:#241d17; --surface2:#2c231b;
+    --line:#3a2f24; --line-soft:#2a221b;
+    --ink:#f3ecdf; --ink-dim:#b8a893; --ink-mute:#8b7c6b;
+    --gold:#e7c877; --gold-deep:#c6892f; --gold-line:#5a4a2f;
+    --spark:#d1512f;
+    --maxw:660px;
+    --serif:'Fraunces',Georgia,'Times New Roman',serif;
+    --sans:'Archivo','Segoe UI',system-ui,sans-serif;
+    --disp:'Anton','Arial Narrow',system-ui,sans-serif;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg:#f5f0e7; --bg2:#efe8db; --surface:#fffaf0; --surface2:#f7efdf;
+      --line:#dccdb4; --line-soft:#e7dcc6;
+      --ink:#2a2118; --ink-dim:#5c5044; --ink-mute:#89796a;
+      --gold:#96661a; --gold-deep:#7c5011; --gold-line:#d7c095; --spark:#b23e1f;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { color-scheme:dark light; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:var(--sans); font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; }
+  img { max-width:100%; }
+  .wrap { max-width:var(--maxw); margin:0 auto; padding:0 20px; }
+  a { color:var(--gold); }
+  h1,h2,h3 { text-wrap:balance; }
+
+  header {
+    background:
+      radial-gradient(120% 90% at 50% -10%, rgba(231,200,119,.15), transparent 62%),
+      linear-gradient(180deg, var(--bg2), var(--bg));
+    border-bottom:1px solid var(--line-soft); padding:40px 0 30px;
+  }
+  .badge { width:72px; height:auto; display:block; margin:0 auto 18px; border-radius:50%;
+    box-shadow:0 0 0 1px var(--gold-line), 0 8px 30px rgba(0,0,0,.35); }
+  .kicker { text-align:center; font-size:12px; letter-spacing:.22em; text-transform:uppercase;
+    color:var(--gold); font-weight:600; margin:0 0 12px; }
+  h1 { font-family:var(--disp); font-weight:400; text-transform:uppercase;
+    font-size:clamp(40px,12vw,70px); line-height:.94; text-align:center; margin:0; }
+  h1 .or { color:var(--gold); display:block; font-size:.6em; margin:.04em 0; }
+  .sub { text-align:center; font-family:var(--serif); font-style:italic;
+    font-size:clamp(16px,4.4vw,20px); color:var(--ink-dim); margin:14px auto 0; max-width:34ch; }
+
+  main { padding:34px 0 8px; }
+  section { margin:0 0 42px; }
+  h2 { font-family:var(--disp); font-weight:400; text-transform:uppercase;
+    font-size:21px; letter-spacing:.03em; margin:0 0 18px; display:flex; align-items:center; gap:12px; }
+  h2::after { content:""; flex:1; height:1px; background:var(--line); }
+
+  .player { max-width:330px; margin:0 auto; }
+  .player video { width:100%; display:block; border-radius:14px; background:#000;
+    box-shadow:0 18px 50px rgba(0,0,0,.45), 0 0 0 1px var(--line); }
+  .dl { margin:16px auto 0; display:flex; flex-direction:column; gap:9px; align-items:center; }
+  .btn { display:inline-flex; align-items:center; gap:10px;
+    background:linear-gradient(180deg, var(--gold), var(--gold-deep));
+    color:#20160a; font-weight:700; font-size:15px; letter-spacing:.01em;
+    font-family:var(--sans); text-decoration:none; border:0; cursor:pointer;
+    padding:13px 24px; border-radius:11px; box-shadow:0 6px 20px rgba(198,137,47,.32);
+    transition:transform .12s ease; }
+  .btn:active { transform:translateY(1px); }
+  .btn svg { width:17px; height:17px; }
+  .dl .alt { font-size:13px; }
+  .dl small { color:var(--ink-mute); font-size:12.5px; text-align:center; }
+
+  .spec { display:grid; grid-template-columns:repeat(2,1fr); gap:1px;
+    background:var(--line); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+  .spec > div { background:var(--surface); padding:14px 16px; }
+  .spec dt { font-size:11px; letter-spacing:.15em; text-transform:uppercase; color:var(--ink-mute); margin:0 0 4px; }
+  .spec dd { margin:0; font-weight:600; font-size:14.5px; }
+
+  .air { text-align:center; border:1px solid var(--gold-line); border-radius:14px;
+    background:linear-gradient(180deg, var(--surface2), var(--surface)); padding:22px 18px; }
+  .air .live { display:inline-block; font-size:11px; font-weight:700; letter-spacing:.18em;
+    color:var(--spark); border:1px solid var(--spark); border-radius:999px; padding:3px 12px; margin-bottom:12px; }
+  .air .d { font-family:var(--disp); text-transform:uppercase; font-size:clamp(19px,5.6vw,28px); line-height:1.08; }
+  .air .t { color:var(--ink-dim); margin-top:9px; font-size:14.5px; }
+  .air .t b { color:var(--ink); }
+
+  ol.beats { list-style:none; margin:0; padding:0; position:relative; }
+  ol.beats::before { content:""; position:absolute; left:54px; top:8px; bottom:24px; width:1px; background:var(--line); }
+  ol.beats li { position:relative; padding:0 0 22px 80px; }
+  ol.beats .tc { position:absolute; left:0; top:1px; width:44px; text-align:right;
+    font-variant-numeric:tabular-nums; font-size:12.5px; color:var(--gold); font-weight:700; }
+  ol.beats .dot { position:absolute; left:49px; top:4px; width:11px; height:11px; border-radius:50%;
+    background:var(--gold); box-shadow:0 0 0 4px var(--bg); }
+  ol.beats li.peak .dot { background:var(--spark); box-shadow:0 0 0 4px var(--bg), 0 0 12px var(--spark); }
+  ol.beats h3 { margin:0 0 3px; font-size:15px; font-weight:700; }
+  ol.beats p { margin:0; color:var(--ink-dim); font-size:14px; }
+  ol.beats q { font-family:var(--serif); font-style:italic; color:var(--ink); }
+
+  ul.check { list-style:none; margin:0; padding:0; }
+  ul.check li { position:relative; padding:11px 0 11px 30px; border-bottom:1px solid var(--line-soft);
+    font-size:14.5px; color:var(--ink-dim); }
+  ul.check li:last-child { border-bottom:0; }
+  ul.check li::before { content:""; position:absolute; left:3px; top:16px; width:9px; height:9px;
+    border:2px solid var(--gold); border-radius:3px; }
+  ul.check li b { color:var(--ink); font-weight:600; }
+  ul.check li i { color:var(--ink); }
+
+  .soc { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; }
+  .soc a { display:flex; flex-direction:column; gap:2px; text-decoration:none;
+    background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:12px 14px; }
+  .soc .p { font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-mute); }
+  .soc .h { color:var(--ink); font-weight:600; font-size:14px; }
+
+  footer { border-top:1px solid var(--line-soft); background:var(--bg2); padding:26px 0 40px; margin-top:16px; }
+  .sponsor { display:flex; align-items:center; gap:14px; justify-content:center; }
+  .sponsor img { width:60px; height:auto; }
+  .sponsor .s1 { font-size:10.5px; letter-spacing:.17em; text-transform:uppercase; color:var(--ink-mute); }
+  .sponsor .s2 { font-weight:700; color:var(--ink); }
+  .sponsor .s3 a { font-size:13px; }
+  .madefor { text-align:center; color:var(--ink-mute); font-size:12px; margin-top:18px; }
+
+  @media (max-width:480px) { .soc { grid-template-columns:1fr; } }
+  @media (prefers-reduced-motion:reduce) { .btn { transition:none; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <img class="badge" src="badge.png" alt="La Mesa del Reino">
+    <p class="kicker">La Mesa del Reino · Promo del episodio</p>
+    <h1>¿Empujón<span class="or">o</span>Espíritu?</h1>
+    <p class="sub">¿Caer por el Espíritu Santo es bíblico? — con el Pastor Adrián Rodríguez</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section>
+    <div class="player">
+      <video controls playsinline preload="metadata" poster="poster.jpg">
+        <source src="https://github.com/cryptofedge/lamesadelreino-promo/releases/download/v1/promo-web.mp4" type="video/mp4">
+      </video>
+      <div class="dl">
+        <a class="btn" href="https://github.com/cryptofedge/lamesadelreino-promo/releases/download/v1/promo.mp4">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16"/></svg>
+          Descargar 1080p
+        </a>
+        <a class="alt" href="https://github.com/cryptofedge/lamesadelreino-promo/releases/download/v1/promo-web.mp4">o la versión ligera (~10&nbsp;MB)</a>
+        <small>Vertical 9:16 · 1080 × 1920 · sin marca de agua · listo para Reels / TikTok / Shorts</small>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="air">
+      <span class="live">● En vivo</span>
+      <div class="d">Sábado 5 de septiembre · 7:00 PM</div>
+      <div class="t">YouTube <b>@lamesadelreino</b> — el promo enlaza al episodio completo</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ficha técnica</h2>
+    <dl class="spec">
+      <div><dt>Duración</dt><dd>1:35 (95 s)</dd></div>
+      <div><dt>Formato</dt><dd>1080 × 1920 · 9:16 · 30 fps</dd></div>
+      <div><dt>Audio</dt><dd>Voz original de los clips + música</dd></div>
+      <div><dt>Subtítulos</dt><dd>Quemados, palabra por palabra</dd></div>
+      <div><dt>Marca de agua</dt><dd>Ninguna</dd></div>
+      <div><dt>Patrocinio</dt><dd>Go Picadera (crédito en el cierre)</dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Anatomía del corte</h2>
+    <ol class="beats">
+      <li><span class="tc">0:00</span><span class="dot"></span>
+        <h3>El reto — en frío</h3>
+        <p>Sin intro, sin logo. Richard: <q>búscame en la Biblia dónde Jesús le dio un empujón a alguien</q>. El texto entra en el primer fotograma.</p></li>
+      <li><span class="tc">0:07</span><span class="dot"></span>
+        <h3>La crítica de Richard</h3>
+        <p>La gente asocia caerse con el poder del Espíritu — con el matiz: <q>no estoy diciendo que el Espíritu Santo no tenga poder</q>. Es una pregunta, no un ataque.</p></li>
+      <li><span class="tc">0:23</span><span class="dot"></span>
+        <h3>Entra el co-host</h3>
+        <p>El argumento de Hechos 19, los hijos de Esceva: <q>a Jesús conozco y a Pablo también, pero ustedes ¿de quiénes son?</q></p></li>
+      <li><span class="tc">0:41</span><span class="dot"></span>
+        <h3>Giro — flash a blanco</h3>
+        <p>Cambia el tono. Entra el invitado.</p></li>
+      <li><span class="tc">0:43</span><span class="dot"></span>
+        <h3>Adrián — la invitación</h3>
+        <p><q>El sábado a partir de las siete de la noche…</q> — la fecha, el lugar, el pueblo laborioso. Encuadre alternando cerrado / abierto.</p></li>
+      <li class="peak"><span class="tc">1:09</span><span class="dot"></span>
+        <h3>Clímax</h3>
+        <p>La estufa botando humo, el BBQ botando chispa, <q>algo mesiánico y algo apostólico</q>. Push-in fuerte, la música rompe.</p></li>
+      <li><span class="tc">1:21</span><span class="dot"></span>
+        <h3>Cierre</h3>
+        <p>CTA con la fecha + todas las redes de La Mesa del Reino + crédito de Go Picadera. Fundido a negro.</p></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Cómo publicarlo</h2>
+    <ul class="check">
+      <li>Sube <b>nativo</b> a cada plataforma — no descargues de una para subir a otra (penaliza el alcance).</li>
+      <li>Caption con la <b>pregunta real</b> + palabras clave: <i>“¿Es bíblico caer en el Espíritu Santo? ¿Dónde lo dice la Biblia?…”</i></li>
+      <li>Cierra el caption con debate: <b>“¿Tú qué crees — bíblico o tradición? 👇”</b></li>
+      <li><b>Comentario fijado</b> en cada post: enlace al episodio completo + “suscríbete para el próximo debate”.</li>
+      <li>Manda la pieza a <b>Adrián</b> lista para repostear — su audiencia es un canal de distribución.</li>
+      <li>Del mismo episodio salen <b>6–8 clips</b> más (el reto, la crítica, “la estufa botando humo”…). Publica 3–5 por semana.</li>
+      <li>Fecha correcta en todo: <b>sábado 5 de septiembre · 7:00 PM · @lamesadelreino</b>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Redes — La Mesa del Reino</h2>
+    <div class="soc">
+      <a href="https://www.youtube.com/@lamesadelreino"><span class="p">YouTube</span><span class="h">@lamesadelreino</span></a>
+      <a href="https://www.instagram.com/lamesadelreinotv"><span class="p">Instagram</span><span class="h">@lamesadelreinotv</span></a>
+      <a href="https://www.tiktok.com/@lamesadelreinotv"><span class="p">TikTok</span><span class="h">@lamesadelreinotv</span></a>
+      <a href="https://www.facebook.com/lamesadelreino"><span class="p">Facebook</span><span class="h">La Mesa del Reino</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="sponsor">
+      <img src="gopicadera.png" alt="Go Picadera">
+      <div>
+        <div class="s1">Con el apoyo de</div>
+        <div class="s2">Go Picadera</div>
+        <div class="s3"><a href="https://gopicadera.com">gopicadera.com</a></div>
+      </div>
+    </div>
+    <p class="madefor">Pieza promocional · para revisión y distribución del equipo</p>
+  </div>
+</footer>
+
+</body>
+</html>
